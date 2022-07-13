@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+}
+
+body {
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+
+.container-principal {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.celular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.celular img {
+    height: 50rem;
+}
+
+.container-login {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    min-height: 34rem;
+    margin-top: 30px;
+}
+
+.logo {
+    height: 3.5rem;
+    margin: 30px 0;
+}
+
+.caixa {
+    border: 1px solid lightgray;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+    width: 85%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.caixa:nth-child(1) {
+    min-height: 19rem;
+}
+
+.caixa:nth-child(2) {
+    padding: 25px;
+}
+
+.caixa:nth-child(2) a {
+    color: #0095F6;
+    font-weight: bold;
+}
+
+form.login {
+    flex-direction: column;
+    width: 80%;
+}
+
+input:nth-child(1), input:nth-child(2) {
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid lightgray;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+input:nth-child(3) {
+    background-color: #0095F6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.separacao {
+    border-top: 1px solid lightgray;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 10px;
+}
+
+.separacao h5 {
+    background-color: white;
+    position: relative;
+    bottom: 5px;
+    width: 50px;
+    margin: 0 auto;
+    color: #9c9c9c;
+}
+
+a.face {
+    color: #2121d1;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+a.esqueceu {
+    color: black;
+    font-size: 12px;
+}
+
+.apps {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100%;   
+}
+
+.apps p {
+    margin: 20px 0;
+}
+
+div.lojas {
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.app {
+    height: 3.3rem;
+    width: 11.2rem;
+    background-size: cover;
+}
+
+.app:nth-child(1) {
+    background-image: url("img/apple-button.png");
+}
+
+.app:nth-child(2) {
+    background-image: url("img/googleplay-button.png");
+}
+
+/* Media Queries */
+
+@media(max-width: 1024px) {
+    .container-principal {
+        width: 90%;
+    }
+
+    .app {
+        width: 9.2rem;
+        height: 2.7rem;
+    }
+}
+
+@media(max-width: 640px) {
+   
+    body {
+        background-color: white;
+    }
+
+    .caixa {
+        border: none;
+    }
+
+    .celular {
+        display: none;
+    }
+
+    .container-principal {
+        width: 90%;
+    }
+
+    .container-login {
+        width: 100%;
+    }
+
+    .app {
+        width: 9rem;
+        height: 2.6rem;
+    }
+}
