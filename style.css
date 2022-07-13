@@ -143,17 +143,17 @@ div.lojas {
     width: 80%;
 }
 
-.app {
+.loja {
     height: 3.3rem;
     width: 11.2rem;
     background-size: cover;
 }
 
-.app:nth-child(1) {
+.loja:nth-child(1) {
     background-image: url("img/apple-button.png");
 }
 
-.app:nth-child(2) {
+.loja:nth-child(2) {
     background-image: url("img/googleplay-button.png");
 }
 
@@ -164,7 +164,7 @@ div.lojas {
         width: 90%;
     }
 
-    .app {
+    .loja {
         width: 9.2rem;
         height: 2.7rem;
     }
@@ -192,7 +192,7 @@ div.lojas {
         width: 100%;
     }
 
-    .app {
+    .loja {
         width: 9rem;
         height: 2.6rem;
     }
